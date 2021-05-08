@@ -33,7 +33,6 @@ const objHero = {
         const passouOIntervalo = frames % 5 === 0;
         if(passouOIntervalo){
             objHero.frameatual++;
-            const { spriteX, spriteY } = objHero.movimentos[objHero.frameatual % objHero.movimentos.length];
             objHero.velocidade = objHero.velocidade + objHero.aceleracao;
             objHero.x = objHero.x + objHero.velocidade; 
         }
